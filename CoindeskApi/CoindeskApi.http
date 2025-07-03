@@ -1,0 +1,6 @@
+@國泰_HostAddress = http://localhost:5096
+
+GET {{國泰_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\CoindeskApi.Application.csproj" />
+    <ProjectReference Include="..\Contract\CoindeskApi.Contract.csproj" />
+    <ProjectReference Include="..\Db\CoindeskApi.Db.csproj" />
+    <ProjectReference Include="..\Infrastructure\CoindeskApi.Infrastructure.csproj" />
+    <ProjectReference Include="..\Share\CoindeskApi.Share.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contract\Utility\" />
+  </ItemGroup>
+
+</Project>
