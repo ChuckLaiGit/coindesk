@@ -75,15 +75,11 @@ docker-compose ps
 
 ###  安全性強化
 -  設定檔加密: 使用 Data Protection API 加密敏感設定
--  API 金鑰管理: 整合 Azure Key Vault 或 HashiCorp Vault
--  JWT 驗證: 實作 Bearer Token 認證機制
 
 ### 多語系支援
 -  IStringLocalizer: 實作資源檔案多語系架構
 
-### 效能優化
--  Redis 快取: 熱點資料快取機制
--  非同步處理: 背景任務與訊息佇列整合
+### 單元測試
 
 ---
 
