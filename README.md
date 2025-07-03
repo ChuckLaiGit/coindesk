@@ -8,16 +8,16 @@
 
 | 模式 | 實作技術 | 效益 |
 |------|----------|------|
-| **Mediator Pattern** | MediatR 實現 CQRS 架構 | 將業務邏輯與控制器解耦 |
-| **讀寫分離** | 資料庫層採用 CQRS 模式 | 優化讀取與寫入效能 |
-| **Repository Pattern** | 資料存取層抽象化 | 提升可測試性 |
+| Mediator Pattern | MediatR 實現 CQRS 架構 | 將業務邏輯與控制器解耦 |
+| 讀寫分離 | 資料庫層採用 CQRS 模式 | 優化讀取與寫入效能 |
+| Repository Pattern | 資料存取層抽象化 | 提升可測試性 |
 
 ### 核心功能
-- ✅ 外部 API 資料獲取與同步
-- ✅ 完整的錯誤處理機制
-- ✅ 讀寫分離資料庫架構
-- ✅ Docker 容器化部署
-- ✅ 結構化日誌記錄
+- 外部 API 資料獲取與同步
+- 完整的錯誤處理機制
+- 讀寫分離資料庫架構
+- Docker 容器化部署
+- 結構化日誌記錄
 
 ---
 
@@ -74,19 +74,16 @@ docker-compose ps
 ##  待實作功能
 
 ###  安全性強化
--  設定檔加密**: 使用 Data Protection API 加密敏感設定
--  API 金鑰管理**: 整合 Azure Key Vault 或 HashiCorp Vault
--  JWT 驗證**: 實作 Bearer Token 認證機制
+-  設定檔加密: 使用 Data Protection API 加密敏感設定
+-  API 金鑰管理: 整合 Azure Key Vault 或 HashiCorp Vault
+-  JWT 驗證: 實作 Bearer Token 認證機制
 
 ### 多語系支援
--  IStringLocalizer**: 實作資源檔案多語系架構
--  文化特定格式**: 數字、日期、貨幣格式本地化
--  動態語言切換**: 支援執行時語言變更
+-  IStringLocalizer: 實作資源檔案多語系架構
 
 ### 效能優化
--  Redis 快取**: 熱點資料快取機制
--  非同步處理**: 背景任務與訊息佇列整合
--  API 限流**: 實作 Rate Limiting 保護機制
+-  Redis 快取: 熱點資料快取機制
+-  非同步處理: 背景任務與訊息佇列整合
 
 ---
 
@@ -121,7 +118,6 @@ services.AddDbContext<ReadDbContext>(options =>
 
 ## 專案特色
 
- **現代化架構**: 採用最新的 .NET 8.0 技術棧  
- **高效能設計**: 讀寫分離與 CQRS 架構  
- **可擴展性**: 使用 Mediator 模式確保架構彈性  
- **容器化部署**: 一鍵 Docker 部署，環境一致性保證  
+ 高效能設計: 讀寫分離與 CQRS 架構  
+ 可擴展性: 使用 Mediator 模式確保架構彈性  
+ 容器化部署: 一鍵 Docker 部署，環境一致性保證  
